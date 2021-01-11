@@ -1,5 +1,6 @@
 const Block = require("./block");
-const { GENESIS_DATA } = require("./config")
+const { GENESIS_DATA } = require("./config");
+const cryptoHash = require("./crypto-hash");
 
 describe('Block', () => {
   const timestamp = 'a-date';
@@ -46,6 +47,11 @@ describe('Block', () => {
 
     it('sets a `timestamp`', () => {
       expect(mineBlock.timestamp).not.toEqual(undefined)
+    })
+
+    it('creats a SHA 256 `hash` based on the proper inputs', () => {
+      expect(mineBlock.hash)
+        .toEqual(cryptoHash(mineBlock.timestamp, lastBlock.hash, data))
     })
   })
 })
