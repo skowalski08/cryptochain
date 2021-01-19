@@ -5,6 +5,8 @@ const Blockchain = require('./blockchain')
 const app = express();
 const blockchain = new Blockchain();
 
+//NOTE: install redis
+
 app.use(bodyParser.json());
 
 app.get('/api/blocks', (req, res) => {
