@@ -6,3 +6,5 @@ package-lock.json
 #testing
 config.js
 average-work.js
+
+pubsub.js
