@@ -1,5 +1,3 @@
-//wallet class to pass tests
-
 class Wallet{
 
 };
