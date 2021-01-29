@@ -5,13 +5,13 @@ describe('Wallet', () => {
 
   beforeEach(() => {
     wallet = new Wallet();
+  })
 
-    it('has a `balance`', () => {
-      expect(wallet).toHaveProperty('balance');
-    })
+  it('has a `balance`', () => {
+    expect(wallet).toHaveProperty('balance');
+  })
 
-    it('has a `publicKey`', () => {
-      expect(wallet).toHaveProperty('publicKey');
-    })
-  });
+  it('has a `publicKey`', () => {
+    expect(wallet).toHaveProperty('publicKey');
+  })
 });
