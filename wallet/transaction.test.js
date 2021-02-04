@@ -21,7 +21,7 @@ describe('Transaction', () => {
     });
 
     it('outputs the amount to the recipient', () => {
-      expect(transaction.outputMap[recipent]).toEqual(amount);
+      expect(transaction.outputMap[recipient]).toEqual(amount);
     });
 
     it('outputs the remaining balace fro the `senderWallet`', () => {
