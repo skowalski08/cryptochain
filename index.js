@@ -15,8 +15,6 @@ const transactionPool = new TransactionPool();
 const wallet = new Wallet();
 const pubsub = new PubSub({ blockchain, transactionPool, wallet });
 
-// setTimeout(() => pubsub.broadcastChain(), 1000);
-
 app.use(bodyParser.json());
 
 app.get('/api/blocks', (req, res) => {
