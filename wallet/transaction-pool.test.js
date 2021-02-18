@@ -2,6 +2,8 @@ const TransactionPool = require('./transaction-pool');
 const Transaction = require('./transaction');
 const Wallet = require('./index')
 
+//need to add more tests
+
 describe('TransactionPool', () => {
   let transactionPool, transaction, senderWallet;
 
