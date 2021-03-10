@@ -19,6 +19,7 @@ const pubsub = new PubSub({ blockchain, transactionPool, wallet });
 const transactionMiner = new TransactionMiner({ blockchain, transactionPool, wallet, pubsub })
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'client')))
 
 app.get('/api/blocks', (req, res) => {
   res.json(blockchain.chain);
